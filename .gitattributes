@@ -1,2 +1,19 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+let userInput = prompt("Введите число:");
+
+let number = Number(userInput);
+
+let cubedNumber = number ** 3;
+
+let squaredNumber = number ** 2;
+
+console.log("Куб числа: " + cubedNumber);
+alert(
+  "Введенное число: " +
+    number +
+    "\nКвадрат числа: " +
+    squaredNumber +
+    "\nКуб числа: " +
+    cubedNumber
+);
