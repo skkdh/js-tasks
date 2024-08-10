@@ -1,0 +1,23 @@
+let userName = prompt("Введите ваше имя:");
+
+let birthYear = prompt("Введите ваш год рождения:");
+
+let currentYear = new Date().getFullYear();
+let age = currentYear - birthYear;
+
+let remainder = age % 10;
+let yearWord;
+
+if (remainder === 1 && age % 100 !== 11) {
+  yearWord = "год";
+} else if (
+  remainder >= 2 &&
+  remainder <= 4 &&
+  !(age % 100 >= 12 && age % 100 <= 14)
+) {
+  yearWord = "года";
+} else {
+  yearWord = "лет";
+}
+
+alert(`${userName}: ${age} ${yearWord}`);
