@@ -1,0 +1,17 @@
+const userInput = prompt("Введите любое число");
+
+
+const num = Number(userInput);
+
+
+if (!isNaN(num) && num >= 0) {
+
+  const array = [];
+  for (let i = 0; i <= num; i++) {
+    array.push(i);
+  }
+
+  alert(array);
+} else {
+  alert("Пожалуйста, введите корректное неотрицательное число.");
+}
