@@ -1,0 +1,13 @@
+let board = [
+  ["X", "O", "X"],
+  ["O", "X", "O"],
+  ["X", "O", "X"],
+];
+
+for (let i = 0; i < 3; i++) {
+  let row = "";
+  for (let j = 0; j < 3; j++) {
+    row += board[i][j] + " ";
+  }
+  console.log(row.trim());
+}
